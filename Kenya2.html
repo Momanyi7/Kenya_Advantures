@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Legacy.</title>
+    <style>
+        body {
+			background-color: #800000;
+            margin: 0;
+            padding: 0;
+            font-family: Times, Times New Roman, serif
+        }
+		.wrapper {
+        width: 80%;
+        background-color: #cbffcb; /* Changed to match original */
+        margin: auto;
+        padding: 20px;
+        display: grid;
+		}
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header'
+                'nav'
+                'feature'
+                'content'
+                'footer';
+            grid-gap: 20px;
+            padding: 20px;
+                margin: auto;
+                background-color: #cbffcb;
+        }
+
+        header, nav, .feature, footer {
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+        }
+		.feature{
+                grid-area: feature;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                background-color:black;
+				color:white;
+            }
+            .feature-fig{
+                background-color: #cbffcb;
+            }
+
+        header {
+			grid-area: header;
+			background-color: black;
+			padding: 2%;
+			text-align: center;
+			color: #fff; /* Text color */
+			font-size: 36px; /* Increased font size for larger text */
+		}
+
+		nav {
+			grid-area: nav;
+			margin: 0 auto; /* Centers the nav within its grid area if needed */
+			background-color: darkwhite; /* Corrected color value */
+			padding: 1% 0; /* Vertical padding */
+		}
+
+		nav ul {
+			list-style-type: none;
+			padding: 1em 0; /* Vertical padding without horizontal padding to avoid offset */
+			margin: 0 auto; /* Ensures the list is centered */
+			display: flex;
+			justify-content: center; /* Center items without forcing them to the edges */
+			align-items: center; /* Vertically centers items within the nav */
+		}
+
+		nav ul li {
+			margin: 0 20px; /* Increase spacing between each link */
+		}
+
+
+        .content-area {
+            grid-area: content;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .main-content, .side-content {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            background-color:black;
+            border: 1px solid #dee2e6;
+			color:white;
+        }
+
+        
+    footer {
+        grid-area: footer;
+        background-color:black;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer a {
+        color: black;
+    }
+
+    footer a:hover {
+        color: black;
+    }
+
+		img{
+                width: 100%;
+				}
+	h1,h2{
+	color:magenta;
+	}
+	blockquote {
+    margin: 2em 0; /* Adds space around the blockquote */
+    padding: .5em; /* Adds space inside the blockquote */
+    background-color: #f9f9f9; /* A light background to distinguish the quote */
+    border-left: 5px solid #ccc; /* A subtle border to the left for distinction */
+    color: #555; /* Darker text color for contrast */
+    font-style: italic; /* Italicizes the quote text for emphasis */
+    font-size: 1.2em; /* Makes the quote text larger than the surrounding text */
+    line-height: 1.1; /* Adjusts the line height for better readability */
+}
+    </style>
+</head>
+<body>
+		<div class="wrapper">
+
+			<div class="grid-container">
+				<header>"Kenya: Landscapes and Legacy".</header>
+			<nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Kenya2.html">Page 2</a></li>
+                <li><a href="Kenya3.html">Page 3</a></li>
+                <li><a href="Kenya4.html">Page 4</a></li>
+                <li><a href="Kenya5.html">Page 5</a></li>
+            </ul>
+			</nav>
+				<div class="feature">
+					<figure>
+						<img src="hospitality.jpg" alt="Hospitable People.">
+						<figcaption>Welcoming Cultures.</figcaption>
+					</figure>
+					<div class="feature-text">
+						<h2>Warm Hospitality of the Kenyan People.</h2>
+						<p>
+								Kenya's culture is renowned for its hospitality, reflecting a deep-seated tradition of warmth, friendliness, and open-heartedness towards visitors. This hospitable nature is a 
+								cornerstone of Kenyan society, deeply rooted in the belief of "harambee".
+						</p>
+					</div>
+				</div>
+				<div class="content-area">
+					<div class="main-content">
+						<article>
+							<h2>Warm Hospitality of the Kenyan People.</h2>
+							<p>
+							Hospitality is deeply ingrained in Kenyan culture, and visitors to the 
+							country are often struck by the warmth and friendliness of the people. 
+							Whether you're sharing a meal in a local home or striking up a conversation
+							with a stranger on the street, 
+							Kenyans are known for their hospitality and welcoming nature.  
+							</p>
+							<blockquote>
+								"The warm hospitality of the Kenyan people embraces all who visit,
+								creating unforgettable experiences."
+							</blockquote>
+						 
+						</article>
+						<article>
+							<h2>Breathtaking Safari Experiences.</h2>
+							<p>A visit to Kenya would be incomplete without embarking on a 
+							safari adventure. The country is renowned for its world-class safari
+							destinations, including the Maasai Mara, Amboseli National Park, 
+							and Tsavo East and West National Parks. Whether you're tracking herds 
+							of elephants, witnessing the Great Migration, or marveling at the 
+							majestic sight of a lioness
+							on the hunt, Kenya offers unforgettable safari experiences</p>
+						</article>
+					</div>
+					<aside class="side-content">
+						<article>
+							<h2>Kenya cuisine.</h2>
+							<p>Kenyan cuisine is a delightful fusion of flavors influenced by
+							various ethnic groups and international culinary trends. Be sure to try 
+							staple dishes like nyama choma 
+							(grilled meat) and ugali (a maize-based dish) during your visit.</p>
+						</article>
+						<ul class="galley">
+						<li>
+							<h2>Mandazi dumpling.</h2>
+							<figure>
+								<img src="mandazi.jpg" alt="Made from wheat.">
+								<figcaption>This is the most common dishes and affordable for all.</figcaption>
+							</figure>
+						</li>
+						<li>
+							<h2>Ugali & Sukuma.</h2>
+							<figure>
+								<img src="ugalisukuma.jpg" alt="Stable food for all.">
+								<figcaption>This is the most common dishes and affordable for all. </figcaption>
+							</figure>
+						</li>
+						
+					</ul>
+					</aside>
+				</div>
+				<footer>&copy; Momanyi Kenya-2024</footer>
+			</div>
+		</div>
+</body>
+</html>

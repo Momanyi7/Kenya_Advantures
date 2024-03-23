@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Legacy.</title>
+    <style>
+        body {
+			background-color: #800000;
+            margin: 0;
+            padding: 0;
+            font-family: Times, Times New Roman, serif
+        }
+		.wrapper {
+        width: 80%;
+        background-color: #cbffcb; /* Changed to match original */
+        margin: auto;
+        padding: 20px;
+        display: grid;
+		}
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header'
+                'nav'
+                'feature'
+                'content'
+                'footer';
+            grid-gap: 20px;
+            padding: 20px;
+                margin: auto;
+                background-color: #cbffcb;
+        }
+
+        header, nav, .feature, footer {
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+        }
+		.feature{
+                grid-area: feature;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                background-color:black;
+				color:white;
+            }
+            .feature-fig{
+                background-color: #cbffcb;
+            }
+
+        header {
+			grid-area: header;
+			background-color: black;
+			padding: 2%;
+			text-align: center;
+			color: #fff; /* Text color */
+			font-size: 36px; /* Increased font size for larger text */
+		}
+
+		nav {
+			grid-area: nav;
+			margin: 0 auto; /* Centers the nav within its grid area if needed */
+			background-color: darkwhite; /* Corrected color value */
+			padding: 1% 0; /* Vertical padding */
+		}
+
+		nav ul {
+			list-style-type: none;
+			padding: 1em 0; /* Vertical padding without horizontal padding to avoid offset */
+			margin: 0 auto; /* Ensures the list is centered */
+			display: flex;
+			justify-content: center; /* Center items without forcing them to the edges */
+			align-items: center; /* Vertically centers items within the nav */
+		}
+
+		nav ul li {
+			margin: 0 20px; /* Increase spacing between each link */
+		}
+
+
+        .content-area {
+            grid-area: content;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .main-content, .side-content {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            background-color:black;
+            border: 1px solid #dee2e6;
+			color:white;
+        }
+
+        
+    footer {
+        grid-area: footer;
+        background-color:black;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer a {
+        color: black;
+    }
+
+    footer a:hover {
+        color: black;
+    }
+
+		img{
+                width: 100%;
+				}
+	h1,h2{
+	color:magenta;
+	}
+	
+	blockquote {
+    margin: 2em 0; /* Adds space around the blockquote */
+    padding: .5em; /* Adds space inside the blockquote */
+    background-color: green; /* A light background to distinguish the quote */
+    border-left: 10px solid #ccc; /* A subtle border to the left for distinction */
+    color: orange; /* Darker text color for contrast */
+    font-style: italic; /* Italicizes the quote text for emphasis */
+    font-size: 1.2em; /* Makes the quote text larger than the surrounding text */
+    line-height: 1.1; /* Adjusts the line height for better readability */
+}
+
+
+
+    </style>
+</head>
+<body>
+		<div class="wrapper">
+
+			<div class="grid-container">
+				<header>"Kenya: Landscapes and Legacy".</header>
+			<nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Kenya2.html">Page 2</a></li>
+                <li><a href="Kenya3.html">Page 3</a></li>
+                <li><a href="Kenya4.html">Page 4</a></li>
+                <li><a href="Kenya5.html">Page 5</a></li>
+            </ul>
+			</nav>
+				<div class="feature">
+					<figure>
+						<img src="kenyan-landscapes.jpg" alt="wildlife.">
+						<figcaption>Wildlife.</figcaption>
+					</figure>
+					<div class="feature-text">
+						<h2>"Discover Kenya's Landscapes & Cultures".</h2>
+						<p>
+							From thrilling safari adventures to tranquil coastal retreats, Kenya
+							offers endless opportunities for discovery. Immerse yourself in the 
+							warmth of its people and witness the conservation efforts protecting 
+							its wildlife. Embark on a journey through the untamed beauty of Kenya 
+							and create unforgettable memories that will last a lifetime.
+						</p>
+					</div>
+				</div>
+				<div class="content-area">
+					<div class="main-content">
+						<article>
+							<h2>The Enchanting Landscape of Kenya.</h2>
+							<p>
+							  Kenya's landscape is a mesmerizing tapestry of diverse ecosystems, 
+							  ranging from the iconic savannahs of the Maasai Mara to the snow-capped
+							  peaks of Mount Kenya. The country boasts an array of natural wonders,
+							  including vast grasslands, lush forests, and stunning coastal regions 
+							  along the Indian Ocean.  
+							</p>
+							<blockquote>
+								"Visitors to Kenya have the chance to engage with local communities through 
+								cultural experiences, such as homestays and guided tours."
+							</blockquote>
+						 
+						</article>
+						<article>
+							<h2>vibrant Cultural Heritage.</h2>
+							<p>Kenya's cultural landscape is as rich and diverse as its geography. 
+							Home to over 40 ethnic groups, each with its own language, traditions,
+							and customs, Kenya is a melting pot of cultural expression. From the 
+							colorful beadwork of the Maasai to the rhythmic dances of the Luo, the
+							country's cultural tapestry is a testament to its vibrant heritage.</p>
+						</article>
+					</div>
+					<aside class="side-content">
+						<article>
+							<h2>Parks and Reserves.</h2>
+							<p>With over 50 national parks and reserves, Kenya offers
+							unparalleled opportunities for wildlife enthusiasts and
+							photographers to witness the Big Five—lion, elephant,
+							buffalo, leopard, and rhinoceros—in their natural habitats.</p>
+						</article>
+						<ul class="galley">
+						<li>
+							<h2>Our culture, our life.</h2>
+							<figure>
+								<img src="culture.jpg" alt="Our culture.">
+								<figcaption>Our traditional attires plays a big role in 
+								reminding us of who we are and not forgetting our past.</figcaption>
+							</figure>
+						</li>
+						<li>
+							<h2>Homestead behind trees.</h2>
+							<figure>
+								<img src="Timeless.jpg" alt="slowlife.">
+								<figcaption>A life not rushed by anyone or anything. </figcaption>
+							</figure>
+						</li>
+						
+					</ul>
+					</aside>
+				</div>
+				<footer>&copy;Momanyi Kenya-2024.</footer>
+			</div>
+		</div>
+</body>
+</html>

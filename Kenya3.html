@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenya Legacy.</title>
+    <style>
+        body {
+			background-color: #800000;
+            margin: 0;
+            padding: 0;
+            font-family: Times, Times New Roman, serif
+        }
+		.wrapper {
+        width: 80%;
+        background-color: #cbffcb; /* Changed to match original */
+        margin: auto;
+        padding: 20px;
+        display: grid;
+		}
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header'
+                'nav'
+                'feature'
+                'content'
+                'footer';
+            grid-gap: 20px;
+            padding: 20px;
+                margin: auto;
+                background-color: #cbffcb;
+        }
+
+        header, nav, .feature, footer {
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+        }
+		.feature{
+                grid-area: feature;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                background-color:black;
+				color:white;
+            }
+            .feature-fig{
+                background-color: #cbffcb;
+            }
+
+        header {
+			grid-area: header;
+			background-color: black;
+			padding: 2%;
+			text-align: center;
+			color: #fff; /* Text color */
+			font-size: 36px; /* Increased font size for larger text */
+		}
+
+		nav {
+			grid-area: nav;
+			margin: 0 auto; /* Centers the nav within its grid area if needed */
+			background-color: darkwhite; /* Corrected color value */
+			padding: 1% 0; /* Vertical padding */
+		}
+
+		nav ul {
+			list-style-type: none;
+			padding: 1em 0; /* Vertical padding without horizontal padding to avoid offset */
+			margin: 0 auto; /* Ensures the list is centered */
+			display: flex;
+			justify-content: center; /* Center items without forcing them to the edges */
+			align-items: center; /* Vertically centers items within the nav */
+		}
+
+		nav ul li {
+			margin: 0 20px; /* Increase spacing between each link */
+		}
+
+
+        .content-area {
+            grid-area: content;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .main-content, .side-content {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            background-color:black;
+            border: 1px solid #dee2e6;
+			color:white;
+        }
+
+        
+    footer {
+        grid-area: footer;
+        background-color:black;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer a {
+        color: black;
+    }
+
+    footer a:hover {
+        color: black;
+    }
+
+		img{
+                width: 100%;
+				}
+	h1,h2{
+	color:magenta;
+	}
+	
+	blockquote {
+    margin: 2em 0; /* Adds space around the blockquote */
+    padding: .5em; /* Adds space inside the blockquote */
+    background-color: #f9f9f9; /* A light background to distinguish the quote */
+    border-left: 5px solid #ccc; /* A subtle border to the left for distinction */
+    color: #555; /* Darker text color for contrast */
+    font-style: italic; /* Italicizes the quote text for emphasis */
+    font-size: 1.2em; /* Makes the quote text larger than the surrounding text */
+    line-height: 1.1; /* Adjusts the line height for better readability */
+}
+    </style>
+</head>
+<body>
+		<div class="wrapper">
+
+			<div class="grid-container">
+				<header>"Kenya: Landscapes and Legacy".</header>
+			<nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Kenya2.html">Page 2</a></li>
+                <li><a href="Kenya3.html">Page 3</a></li>
+                <li><a href="Kenya4.html">Page 4</a></li>
+                <li><a href="Kenya5.html">Page 5</a></li>
+            </ul>
+			</nav>
+				<div class="feature">
+					<figure>
+						<img src="consavation.jpg" alt="Childen in a min-forest.">
+						<figcaption>Childen exploring trees .</figcaption>
+					</figure>
+					<div class="feature-text">
+						<h2>Conservation and Ecotourism.</h2>
+						<p>
+							Discover how conservation efforts and ecotourism initiatives are 
+							paving the way for a sustainable future. Witness firsthand the 
+							commitment to preserving natural habitats and biodiversity, as 
+							communities and organizations work together to promote responsible
+							travel.
+						</p>
+					</div>
+				</div>
+				<div class="content-area">
+					<div class="main-content">
+						<article>
+							<h2>Conservation Efforts and Ecotourism Initiatives.</h2>
+							<p>
+							  Kenya is at the forefront of conservation efforts in Africa, with 
+							  nitiatives aimed at preserving its natural heritage for future generations.
+							  From community-based conservation projects to anti-poaching initiatives, 
+							  the country is committed to
+							  sustainable tourism practices that protect its wildlife and ecosystems. 
+							</p>
+							<blockquote>
+								Birdwatching enthusiasts will be in paradise in Kenya, with prime birdwatching
+								destinations like Lake Nakuru and the Kakamega Forest 
+							</blockquote>
+						 
+						</article>
+						<article>
+							<h2>Diverse Wildlife and Birdlife.</h2>
+							<p>Kenya's abundant wildlife is one of its most compelling attractions.
+							From the iconic African elephant to the elusive black rhinoceros, 
+							the country is home to a staggering array of mammal species. 
+							Additionally, Kenya's birdlife is equally impressive, with over 
+							1,000 species inhabiting its forests, wetlands, and grasslands.</p>
+						</article>
+					</div>
+					<aside class="side-content">
+						<article>
+							<h2>Ecotourism.</h2>
+							<p>Ecotourism initiatives in Kenya offer travelers the opportunity to engage
+							in responsible tourism practices, such as guided nature walks, tree planting
+							programs, 
+							and wildlife monitoring activities..</p>
+						</article>
+						<ul class="galley">
+						<li>
+							<h2>Our culture, our life.</h2>
+							<figure>
+								<img src="landscape.jpg" alt="Rural road.">
+								<figcaption>The beauty of walking bearfoot in such road is heavenly, connecting with nature.</figcaption>
+							</figure>
+						</li>
+						<li>
+							<h2>Safari tours.</h2>
+							<figure>
+								<img src="safari.jpg" alt="Zebra.">
+								<figcaption>A zeal of zebra drinking water. </figcaption>
+							</figure>
+						</li>
+						
+					</ul>
+					</aside>
+				</div>
+				<footer>&copy; Momanyi Kenya-2024</footer>
+			</div>
+		</div>
+</body>
+</html>

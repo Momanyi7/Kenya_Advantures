@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Legacy.</title>
+    <style>
+        body {
+			background-color: #800000;
+            margin: 0;
+            padding: 0;
+            font-family: Times, Times New Roman, serif
+        }
+		.wrapper {
+        width: 80%;
+        background-color: #cbffcb; /* Changed to match original */
+        margin: auto;
+        padding: 20px;
+        display: grid;
+		}
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header'
+                'nav'
+                'feature'
+                'content'
+                'footer';
+            grid-gap: 20px;
+            padding: 20px;
+                margin: auto;
+                background-color: #cbffcb;
+        }
+
+        header, nav, .feature, footer {
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+        }
+		.feature{
+                grid-area: feature;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                background-color:black;
+				color:white;
+            }
+            .feature-fig{
+                background-color: #cbffcb;
+            }
+
+        header {
+			grid-area: header;
+			background-color: black;
+			padding: 2%;
+			text-align: center;
+			color: #fff; /* Text color */
+			font-size: 36px; /* Increased font size for larger text */
+		}
+
+		nav {
+			grid-area: nav;
+			margin: 0 auto; /* Centers the nav within its grid area if needed */
+			background-color: darkwhite; /* Corrected color value */
+			padding: 1% 0; /* Vertical padding */
+		}
+
+		nav ul {
+			list-style-type: none;
+			padding: 1em 0; /* Vertical padding without horizontal padding to avoid offset */
+			margin: 0 auto; /* Ensures the list is centered */
+			display: flex;
+			justify-content: center; /* Center items without forcing them to the edges */
+			align-items: center; /* Vertically centers items within the nav */
+		}
+
+		nav ul li {
+			margin: 0 20px; /* Increase spacing between each link */
+		}
+
+
+        .content-area {
+            grid-area: content;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .main-content, .side-content {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            background-color:black;
+            border: 1px solid #dee2e6;
+			color:white;
+        }
+
+        
+    footer {
+        grid-area: footer;
+        background-color:black;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer a {
+        color: black;
+    }
+
+    footer a:hover {
+        color: black;
+    }
+
+		img{
+                width: 100%;
+				}
+	h1,h2{
+	color:magenta;
+	}
+	blockquote {
+    margin: 2em 0; /* Adds space around the blockquote */
+    padding: .5em; /* Adds space inside the blockquote */
+    background-color: #f9f9f9; /* A light background to distinguish the quote */
+    border-left: 5px solid #ccc; /* A subtle border to the left for distinction */
+    color: #555; /* Darker text color for contrast */
+    font-style: italic; /* Italicizes the quote text for emphasis */
+    font-size: 1.2em; /* Makes the quote text larger than the surrounding text */
+    line-height: 1.1; /* Adjusts the line height for better readability */
+}
+    </style>
+</head>
+<body>
+		<div class="wrapper">
+
+			<div class="grid-container">
+				<header>"Kenya: Landscapes and Legacy".</header>
+			<nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Kenya2.html">Page 2</a></li>
+                <li><a href="Kenya3.html">Page 3</a></li>
+                <li><a href="Kenya4.html">Page 4</a></li>
+                <li><a href="Kenya5.html">Page 5</a></li>
+            </ul>
+			</nav>
+				<div class="feature">
+					<figure>
+						<img src="kenyan-landscapes.jpg" alt="Landscape">
+						<figcaption>A herd of elephants.</figcaption>
+					</figure>
+					<div class="feature-text">
+						<h2>Opportunities for discovery</h2>
+						<p>
+							Explore the captivating landscapes and vibrant cultures of Kenya.
+							From thrilling safari adventures to tranquil coastal retreats, Kenya
+							offers endless opportunities for discovery. Immerse yourself in the 
+							warmth of its people and witness the conservation efforts protecting 
+							its wildlife. 
+						</p>
+					</div>
+				</div>
+				<div class="content-area">
+					<div class="main-content">
+						<article>
+							<h2>Adventure Activities for Thrill-seekers.</h2>
+							<p>
+							  For adrenaline junkies seeking adventure, Kenya has no shortage of exhilarating activities to offer. From trekking to the summit of Mount Kenya, Africa's second-highest peak, to white-water rafting on the Tana River, the country offers an array of thrilling 
+							  experiences against the backdrop of its stunning natural scenery.  
+							</p>
+							<blockquote>
+								"The Great Rift Valley offers prime opportunities for hot
+								air ballooning, providing panoramic views of the dramatic landscapes ."
+							</blockquote>
+						 
+						</article>
+						<article>
+							<h2>Timeless Magic and Endless Exploration.</h2>
+							<p>Above all, Kenya captivates the hearts and imaginations of travelers with its timeless magic and endless opportunities for exploration. Whether you're traversing the savannahs in search of wildlife, immersing yourself in the vibrant cultures of its people, or simply soaking in the breathtaking beauty of its landscapes,
+							Kenya promises an unforgettable journey filled with discovery and wonder.</p>
+						</article>
+					</div>
+					<aside class="side-content">
+						<article>
+							<h2>Your journey through Kenya.</h2>
+							<p>As you embark on your journey through Kenya, take a moment to savor the small moments—the golden glow of a sunrise over the savannah, the laughter of children playing in a remote village, the whisper of the wind through ancient acacia trees—moments that remind us 
+							of the profound beauty and resilience of the human spirit.</p>
+						</article>
+						<ul class="galley">
+						<li>
+							<h2>Kenya a sanctuary for widllife.</h2>
+							<figure>
+								<img src="wildlife.jpg" alt="Cheeter.">
+								<figcaption>Kenya stands as a sanctuary for wildlife.</figcaption>
+							</figure>
+						</li>
+						<li>
+							<h2>Happiness and homely; Kenya wildlife.</h2>
+							<figure>
+								<img src="happyKe.jpg" alt="Enjoying yourself.">
+								<figcaption>This East African gem is synonymous with the Great Migration. </figcaption>
+							</figure>
+						</li>
+						
+					</ul>
+					</aside>
+				</div>
+				<footer>&copy; Momanyi Kenya-2024</footer>
+			</div>
+		</div>
+</body>
+</html>
